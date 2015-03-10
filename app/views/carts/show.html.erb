@@ -4,7 +4,3 @@
   
 <%= render @cart %>
 
-<% @cart.line_items.each do |item| %>
-  <%= button_to 'Delete Items', item, method: :delete,
-      data: { confirm: 'Are you sure?' } %>
-<% end %>
