@@ -1,7 +1,7 @@
 <% if notice %>
 <p id="notice"><%= notice %></p>
 <% end %>
-<h1>Your Pragmatic Catalog </h1>
+<h1><%= t('.title_html') %></h1>
 <% if @counter >= 5 %>
   <p>You have accessed this page <%= pluralize(@counter, 'time') %></p>
 <% end %>
@@ -11,10 +11,14 @@
       <div class="entry">
         <%= image_tag(product.image_url) %>
         <h3><%= product.title %></h3>
-        <%= sanitize(product.description) %>
+        <%if I18n.locale == :es%>
+          <%= sanitize(product.esdescripcion) %>
+        <% else %>
+          <%= sanitize(product.description) %>
+        <% end %>     
         <div class="price_line">
           <span class="price"><%= number_to_currency(product.price) %></span>
-	  <%= button_to 'Add to Cart', line_items_path(product_id: product),
+	  <%= button_to t('.add_html'), line_items_path(product_id: product),
 	      remote: true %>
         </div>
       </div>

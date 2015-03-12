@@ -25,6 +25,13 @@ Product.create!(title: 'CoffeeScript',
 	shows you how to hold onto all the power and flexibility of JavaScript
 	while writing clearer, cleaner, and safer code.
       </p>},
+  esdescripcion: 
+    %{<p>
+        El lenguaje tiene un seguimiento relativamente grande por parte de la 
+        comunidad Ruby. El soporte a CoffeeScript está incluido en Ruby on Rails 
+        desde su versión 3.1.6 Además, Brendan Eich ha hecho referencia a CoffeeScript 
+        como una influencia en sus pensamientos sobre el futuro de JavaScript.
+      </p>},
   image_url:   'cs.jpg',    
   price: 36.00)
 # . . .
@@ -34,6 +41,16 @@ Product.create!(title: 'Programming Ruby 1.9 & 2.0',
         Ruby is the fastest growing and most exciting dynamic language
         out there. If you need to get working programs delivered fast,
         you should add Ruby to your toolbox.
+      </p>},
+  esdescripcion:
+    %{<p>
+        Ruby es un lenguaje de programación interpretado, reflexivo y 
+        orientado a objetos, creado por el programador japonés Yukihiro 
+        "Matz" Matsumoto, quien comenzó a trabajar en Ruby en 1993, y lo 
+        presentó públicamente en 1995. Combina una sintaxis inspirada en 
+        Python y Perl con características de programación orientada a objetos 
+        similares a Smalltalk. Comparte también funcionalidad con otros 
+        lenguajes de programación como Lisp, Lua, Dylan y CLU. 
       </p>},
   image_url: 'ruby.jpg',
   price: 49.95)
@@ -49,5 +66,17 @@ Product.create!(title: 'Rails Test Prescriptions',
         procedures for Rails 2 and Rails 3, and introduces popular add-ons,
         including Cucumber, Shoulda, Machinist, Mocha, and Rcov.
       </p>},
+  esdescripcion: 
+    %{<p>
+        <em>Desarrollo guiado por pruebas de software, o Test-driven development 
+        (TDD) es una práctica de ingenieria de sofware que involucra otras dos prácticas: 
+        Escribir las pruebas primero (Test First Development) y Refactorización (Refactoring). 
+        Para escribir las pruebas generalmente se utilizan las pruebas unitarias. En primer 
+        lugar, se escribe una prueba y se verifica que las pruebas fallan. A continuación, se 
+        implementa el código que hace que la prueba pase satisfactoriamente y seguidamente 
+        se refactoriza el código escrito.
+      </p>},
   image_url: 'rtp.jpg',
   price: 34.95)
+
+

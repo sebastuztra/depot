@@ -9,7 +9,11 @@
       <td class="list_description">
         <dl>
           <dt><%= product.title %></dt>
-          <dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
+          <%if I18n.locale == :es%>
+            <dd><%= truncate(strip_tags(product.esdescripcion), length: 80) %></dd>
+          <% else %>
+            <dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
+          <% end %>
         </dl>
       </td>
       <td class="list_actions">
